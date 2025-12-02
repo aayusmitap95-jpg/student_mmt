@@ -19,7 +19,7 @@ curl -X POST "https://zany-spork-97r66q9g4g44f9qr-8000.app.github.dev/api/studen
   }'
 
 #D. Update Student
-curl -X PUT "https://zany-spork-97r66q9g4g44f9qr-8000.app.github.dev/api/students/1" \
+curl -X PUT "https://zany-spork-97r66q9g4g44f9qr-8000.app.github.dev/api/students/4" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Alice Updated",
@@ -30,10 +30,10 @@ curl -X PUT "https://zany-spork-97r66q9g4g44f9qr-8000.app.github.dev/api/student
     
 
 # E. Delete Student
-curl -X DELETE "https://zany-spork-97r66q9g4g44f9qr-8000.app.github.dev/api/students"
+curl -X DELETE "https://zany-spork-97r66q9g4g44f9qr-8000.app.github.dev/api/students/4"
 
 
 ##################### DB Observation Via SQLite Web
-- install https://github.com/coleifer/sqlite-web
-- pip install sqlite-web
-- sqlite_web students.db
+# - install https://github.com/coleifer/sqlite-web
+# - pip install sqlite-web
+# - sqlite_web students.db
