@@ -1,4 +1,4 @@
-import { initStudentController } from "../controllers/studentController.js";
+import { initStudentController } from "../controllers/StudentController.js";
 
 // Load a view into #app container
 async function loadView(path) {
@@ -19,9 +19,9 @@ export async function router() {
     initStudentController();
   }
 
-  else {
-    await loadView("/frontend/pages/404.html");
-  }
+//   else {
+//     await loadView("/frontend/pages/404.html");
+//   }
 }
 
 // Make links work without page reload

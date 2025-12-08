@@ -1,5 +1,5 @@
 import { $ } from "../utils/dom.js";
-// import { editStudent, deleteStudentAction } from "../controllers/studentController.js";
+import { editStudent, deleteStudentAction } from "../controllers/StudentController.js";
 
 // Renders the list of students into an HTML table
 export function renderStudentTable(students) {
