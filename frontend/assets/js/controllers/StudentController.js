@@ -2,7 +2,7 @@ import {
     apiGetAll, 
     apiGetOne, 
     apiCreate, 
-    // apiUpdate, 
+    apiUpdate, 
     // apiDelete 
 } from "../services/studentService.js";
 
@@ -76,16 +76,16 @@ export async function editStudent(id) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-// // Update an existing student
-// export async function updateStudent(id, data) {
-//   const res = await apiUpdate(id, data);
-//   if (res.ok) {
-//     showAlert("Updated!");
-//     resetForm();
-//     setState({ editingId: null });
-//     loadStudents();
-//   }
-// }
+// Update an existing student
+export async function updateStudent(id, data) {
+  const res = await apiUpdate(id, data);
+  if (res.ok) {
+    showAlert("Updated!");
+    resetForm();
+    setState({ editingId: null });
+    loadStudents();
+  }
+}
 
 // Delete a student
 // export async function deleteStudentAction(id) {
